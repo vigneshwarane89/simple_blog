@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<title> My Blog</title>
+</head>
+<body>
+<nav class = "navbar role ="navigation">
+			<ul class = "nav">
+				{% if user != None %}
+				<a class="navbar-brand" href="#">{{user.username}}</a>
+				{% endif %}
+				
+
+</nav>
+
+<div>
+			<h1>Blog Articles!</h1>
+		</div>
+
+		<div>
+			{% for blog in blogs %}
+				<div>
+					<div>
+							<h3>{{blog.title}}</h3>
+							<small>{{blog.author}}</small>
+					</div>
+					{{blog.blog_content}}
+				</div>
+				{% endfor %}
+		</div>
+</body>
+</html>
+
+		
