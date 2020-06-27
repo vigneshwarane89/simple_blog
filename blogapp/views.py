@@ -3,7 +3,10 @@ from django.http import HttpResponse
 from blogapp.models import BlogArticle
 from django.contrib.auth.models import User
 # Create your views here.
-"""u=(User.objects.all())
+"""
+typed in shell
+
+u=(User.objects.all())
 testuser=u[0]
 simple=BlogArticle()
 simple.title="Sample"
