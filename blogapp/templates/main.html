@@ -5,14 +5,15 @@
 <title> My Blog</title>
 </head>
 <body>
-<nav class = "navbar role ="navigation">
-			<ul class = "nav">
-				{% if user != None %}
-				<a class="navbar-brand" href="#">{{user.username}}</a>
-				{% endif %}
-				
+<nav class>
+		<ul class = "nav navbar-nav">
+			{% if user != None %}
+			<a class="navbar-brand" href="#">{{user.username}}</a>
+			<li><a href="#" data-toggle="modal" data-target="#addblog">Add Blog!</a></li>
+			{% endif %}
+			<li><a href="#" data-toggle="modal" data-target="#login">Login!</a></li>
 
-</nav>
+	</nav>
 
 <div>
 			<h1>Blog Articles!</h1>
@@ -31,5 +32,3 @@
 		</div>
 </body>
 </html>
-
-		
